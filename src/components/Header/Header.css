@@ -1,0 +1,19 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem 0;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  gap: 1rem;
+}
+.nav a {
+  font-size: 0.8em;
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+}
