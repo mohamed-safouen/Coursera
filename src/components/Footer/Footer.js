@@ -1,34 +1,20 @@
 import logo from "../../images/Logo.svg";
+import'./Footer.css'
 const Footer = () => {
   return (
     <>
-      <div>
+      <div className="footer-row" >
         <div className="logo">
           <img src={logo} alt="logo" />
         </div>
         <div className="tex-footer">
-          <nav className="navigation">
-            <h4>navigation</h4>
-            <ul>
-              <a href="#HOME">
-                <li>HOME</li>
-              </a>
-              <a href="#ABOUT">
-                <li>ABOUT</li>
-                <a href="#MENU">
-                  <li>MENU</li>
-                </a>
-                <a href="#RESERVZTIONS">
-                  <li>RESERVATIONS</li>
-                </a>
-                <a href="#ORDER">
-                  <li>ORDER ONLINE</li>
-                </a>
-                <a href="#LOGIN">
-                  <li>LOGIN</li>
-                </a>
-              </a>
-            </ul>
+          <nav className="nav-footer">
+            <a href="#HOME">Home</a>
+            <a href="#ABOUT">About</a>
+            <a href="#MENU">Menu</a>
+            <a href="#RESERVZTIONS">Reservations</a>
+            <a href="#ORDER">Order Online</a>
+            <a href="#LOGIN">Login</a>
           </nav>
           <div className="contact">
             <h4>Contact</h4>

@@ -7,9 +7,10 @@
 }
 .nav {
   display: flex;
-  justify-content: space-between;
-  text-decoration: none;
-  gap: 1rem;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 28px;
 }
 .nav a {
   font-size: 0.8em;

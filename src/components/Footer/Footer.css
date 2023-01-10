@@ -1,0 +1,29 @@
+.nav-footer {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 15px;
+}
+.nav-footer a {
+  font-size: 0.8em;
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+}
+.logo{
+    width: 13rem;
+}
+.footer-row{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.tex-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 27rem;
+}
+h5{
+    text-align: center;
+}

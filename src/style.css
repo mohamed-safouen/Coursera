@@ -18,8 +18,9 @@ body {
 }
 .button_Y{
   font-family: var(--font-s);
-  font-weight: 600;
-  font-size: 15px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
   height: fit-content;
   border: transparent;
   background-color: var(--secondary);

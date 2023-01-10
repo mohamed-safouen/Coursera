@@ -1,17 +1,18 @@
+import './About.css'
 const About = () => {
   return (
-    <>
+    <div className="About">
       <div className="title_description">
-        <title>Little Lemon</title>
-        <h5>Chicago</h5>
+        <h1>Little Lemon</h1>
+        <h2>Chicago</h2>
         <p>Loren</p>
-        <button>reserve a Table</button>
+        
       </div>
       <div className="two_img">
         <img className="adrian_img" src="" alt="Adrian image" />
         <img className="mario_img" src="" alt="Mario image" />
       </div>
-    </>
+    </div>
   );
 };
 export default About;

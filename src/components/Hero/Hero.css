@@ -10,23 +10,28 @@
   width: 23rem;
 }
 .title_description h1 {
-  font-family: var(--font-p);
+  font-family: "Roboto";
   font-weight: 500;
-  font-size: 64px;
+  font-style:"Medium";
+  line-height: 65px;
+  font-size: 56px;
   color: var(--secondary);
   margin: 0;
 }
 .title_description h2 {
   font-family: var(--font-p);
   font-weight: 400;
-  font-size: 40px;
+  font-style:oblique;
+  font-size: 32px;
+  line-height: 38px;
   color: var(--Wh);
   margin: 0;
 }
 .title_description p {
   font-family: var(--font-s);
   font-weight: 400;
-  font-size: 18px;
+  font-style: oblique;
+  font-size: 20px;
   color: var(--Wh);
   margin: 1 0 0 0;
 }
