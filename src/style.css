@@ -31,5 +31,29 @@ body {
   -o-border-radius: 15px;
   padding: 0.5rem 1.4rem;
 }
+@media only screen and (max-width: 860px)  {
+.Rest_img,.two_img,.logo{
+  display:none;
+}
+.footer-row{
+  margin:0 -10rem;
+}
+.tex-footer,.Header{
+    justify-content: space-around;
+    width: 50rem;
+} 
+body{
+  margin:0 2rem;
+}
+
+}
+@media only screen and (max-width: 340px)  {
+body{
+  margin:0 1rem;
+}
+.clients{
+  margin: 0 10rem;
+}
+}
 
 

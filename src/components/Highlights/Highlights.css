@@ -1,11 +1,9 @@
-.Highlights{
-    display: flex;
-    flex-direction: column;
-}
+
 .title_spec{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 2rem;
 }
 .title_spec h4{
     width: 26rem;
@@ -16,7 +14,7 @@
 .specials-Card{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     gap:1rem;
     width: 100%;
     margin: 0 auto;
@@ -34,9 +32,7 @@
   -ms-border-radius:15px 15px 0 0;
   -o-border-radius:15px 15px 0 0;
 }
-.Card-img{
- 
-}
+
 .Card-img img{ 
     width:13rem; 
     height: 8rem;
@@ -44,10 +40,13 @@
 }
 .Card-text{
     display: flex;
-    justify-content:space-around;
+    align-content:flex-start;
     flex-direction: column;
     height: 18rem;
     padding: 0.5rem 1rem;
+}
+.Card-text div:last-of-type{
+    margin-bottom: 0;
 }
 .Card-product{
     display: flex;
@@ -64,4 +63,5 @@
 }
 .Card-plus{
     font-weight: 700;
+    margin-top: auto
 }

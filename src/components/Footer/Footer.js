@@ -18,7 +18,7 @@ const Footer = () => {
           </nav>
           <div className="contact">
             <h4>Contact</h4>
-            <ul>
+            <ul className="list">
               <li>Adresse</li>
               <li>Phone number</li>
               <li>email</li>
@@ -26,10 +26,10 @@ const Footer = () => {
           </div>
           <div className="socials">
             <h4>socials</h4>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+            <ul className="list">
+              <li>Facebook</li>
+              <li>Instagram</li>
+              <li>Twitter</li>
             </ul>
           </div>
         </div>

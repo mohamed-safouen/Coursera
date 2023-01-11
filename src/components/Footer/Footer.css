@@ -1,5 +1,5 @@
 .nav-footer {
-  display: flex;
+display: flex;
 flex-direction: column;
 align-items: flex-start;
 padding: 0px;
@@ -12,17 +12,29 @@ gap: 15px;
   font-weight: 700;
 }
 .logo{
-    width: 13rem;
+    width: 10rem;
+    padding: 1rem 0;
+    
 }
 .footer-row{
-    display: flex;
-    justify-content: space-between;
+display: flex;
+justify-content: center;
+gap:1%;
+margin:3rem 0;
+   
     
 }
 .tex-footer{
     display: flex;
-    justify-content: space-between;
-    width: 27rem;
+    justify-content: center;
+    align-items:baseline;
+    gap: 8rem;
+    width:70rem;
+
+}
+.list {
+  list-style: none;
+  padding: 0;
 }
 h5{
     text-align: center;

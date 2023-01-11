@@ -1,8 +1,9 @@
 .About {
   background-color: var(--primary);
   margin: 0 -10em 6em -10em;
-  padding: 0 10em;
+  padding: 2em 10em 0 10em;
   display: flex;
+  
   justify-content: space-between;
 }
 .title_description {
@@ -37,16 +38,28 @@
 }
 
 .two_img {
-  width: 15rem;
-  max-height: 17rem;
+  width: 17rem;
+  max-height: 21rem;
+  position: relative;
+  top:-3rem;
 }
-.two img {
-  width: 100%;
-  height: 20rem;
+.two_img img {
+  width: 12rem;
+  height: 18rem;
   padding: 2rem;
   border-radius: 45px;
   -webkit-border-radius: 45px;
   -moz-border-radius: 45px;
   -ms-border-radius: 45px;
   -o-border-radius: 45px;
+}
+.adrian_img{
+position: absolute;
+top:0;
+right:0;
+}
+.mario_img{
+  position: absolute;
+  top:5rem;
+ right:8rem;
 }
