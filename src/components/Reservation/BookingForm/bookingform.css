@@ -1,0 +1,70 @@
+form{
+    display: grid; 
+    gap: 20px
+}
+.booking{
+ align-items: center;
+  background-color: var(--primary);
+  margin: 0 -10em 6em -10em;
+  padding: 2em 10em;
+  display: flex;
+  justify-content: center;
+ min-height: 70vh;
+  min-width: 70vw;
+
+}
+
+.right {
+  color: #3f1352;
+
+  flex-direction: column;
+
+  padding: 1rem;
+
+  background-color: #fff;
+
+  border-radius: 25px;
+
+  opacity: 0.9;
+}
+
+.right h3 {
+  margin: 0;
+  text-transform: uppercase;
+  color: #371047;
+}
+
+.right label {
+margin-bottom: -1rem;
+  color: var(--secondary);
+  font-size: 1.2rem;
+}
+
+.right input {
+  color: #192d3c;
+  font-size: 1.2rem;
+
+}
+
+.submit {
+  background-color:var(--Gr);
+  border: 1px solid #8e44ad;
+  color: var(--Wh);
+  font-weight: bold;
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: auto;
+}
+
+.left {
+  width: 35rem;
+}
+
+h1 {
+  font-size: 3.25rem;
+  color:var(--secondary);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  text-transform: uppercase;
+}
+
