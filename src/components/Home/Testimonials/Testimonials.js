@@ -1,5 +1,5 @@
 import "./Testimonials.css"
-import profile from "./../../images/profile-photo.jpg"
+import profile from "./../../../images/Home/profile-photo.jpg"
 const Testimonials = () => {
   const testi = [
     { name: "Adrian", photo: profile, Rating: 5, Review: "" },
@@ -22,7 +22,7 @@ const Testimonials = () => {
             </div>
             <div className="profile">
               <div className="photo">
-                <img src={x.photo} />
+                <img src={x.photo} alt={x.name} />
               </div>
               <h4>{x.name}</h4>
             </div>

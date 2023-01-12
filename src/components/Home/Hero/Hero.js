@@ -1,4 +1,4 @@
-import food from "./../../images/restauranfood.jpg";
+import food from "./../../../images/Home/restauranfood.jpg";
 import "./Hero.css"
 const Hero = () => {
   return (
@@ -14,7 +14,7 @@ const Hero = () => {
         <button className="button_Y">Reserve a Table</button>
       </div>
       <div className="Rest_img">
-        <img src={food} alt="restaurant image" />
+        <img src={food} alt="restaurant" />
       </div>
     </div>
   );

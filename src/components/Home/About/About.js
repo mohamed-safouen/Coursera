@@ -1,6 +1,6 @@
 import './About.css'
-import adrian from './../../images/Mario and Adrian A.jpg'
-import mario from "./../../images/Mario and Adrian b.jpg";
+import adrian from './../../../images/Home/Mario and Adrian A.jpg'
+import mario from "./../../../images/Home/Mario and Adrian b.jpg";
 const About = () => {
   return (
     <div className="About">
@@ -16,8 +16,8 @@ const About = () => {
         </p>
       </div>
       <div className="two_img">
-        <img className="adrian_img" src={adrian} alt="Adrian image" />
-        <img className="mario_img" src={mario} alt="Mario image" />
+        <img className="adrian_img" src={adrian} alt="Adrian" />
+        <img className="mario_img" src={mario} alt="Mario" />
       </div>
     </div>
   );

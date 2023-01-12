@@ -1,7 +1,7 @@
 import "./Highlights.css";
-import salad from "./../../images/specials/greek salad.jpg";
-import bruch from "./../../images/specials/bruchetta.svg";
-import dessert from "./../../images/specials/lemon dessert.jpg";
+import salad from "./../../../images/Home/specials/greek salad.jpg";
+import bruch from "./../../../images/Home//specials/bruchetta.svg";
+import dessert from "./../../../images/Home//specials/lemon dessert.jpg";
 const specials = [
   { name: "Greek salad", price: 12.99, description: "The famous greek salad of crispy littuce,peppers,olives and our Chicago style feta cheese.granished with crunchy garlic and rosemany croutons ", image: salad },
   { name: "Bruchetta", price: 5.99, description: "Our Burchetta is made from grilled bread that has been smeared with garlic ans sessoned with salt and olive oil", image: bruch },
@@ -18,7 +18,7 @@ const Highlights = () => {
         {specials.map((special,index)=>{
           return (
             <div key={index} className="Card-container">
-              <div className="Card-img"><img src={special.image}/></div>
+              <div className="Card-img"><img src={special.image} alt={special.name}/></div>
               <div className="Card-text">
               <div className="Card-product">
               <h5 className="Card-title">{special.name}</h5>

@@ -1,9 +1,9 @@
-import logo from "../../images/Logo.svg";
-import'./Footer.css'
+import logo from "./../../images/Header/Logo.svg";
+import "./Footer.css";
 const Footer = () => {
   return (
     <>
-      <div className="footer-row" >
+      <div className="footer-row">
         <div className="logo">
           <img src={logo} alt="logo" />
         </div>
