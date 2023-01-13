@@ -1,70 +1,79 @@
-form{
-    display: grid; 
-    gap: 20px
+
+.banner{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/src/images/reservation/restaurant.jpg") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding:2rem 0 2rem 0;
+    margin: 0 -10rem;
 }
-.booking{
- align-items: center;
-  background-color: var(--primary);
-  margin: 0 -10em 6em -10em;
-  padding: 2em 10em;
-  display: flex;
-  justify-content: center;
- min-height: 70vh;
-  min-width: 70vw;
-
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8rem;
+   
 }
-
-.right {
-  color: #3f1352;
-
-  flex-direction: column;
-
-  padding: 1rem;
-
-  background-color: #fff;
-
-  border-radius: 25px;
-
-  opacity: 0.9;
+.card-img{
+    background: url("/src/images/reservation/reserved.jpg") center/cover no-repeat;
+    width: 20rem;
 }
-
-.right h3 {
-  margin: 0;
-  text-transform: uppercase;
-  color: #371047;
+.banner h2{
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
 }
-
-.right label {
-margin-bottom: -1rem;
-  color: var(--secondary);
-  font-size: 1.2rem;
+.card-content{
+    background: #fff;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
-
-.right input {
-  color: #192d3c;
-  font-size: 1.2rem;
-
+.card-content h3{
+    text-align: center;
+    color: #000;
+    font-size:1.6rem;
+    font-weight: 500;
+    line-height:10px;
 }
-
-.submit {
-  background-color:var(--Gr);
-  border: 1px solid #8e44ad;
-  color: var(--Wh);
-  font-weight: bold;
-  cursor: pointer;
-  font-weight: 500;
-  margin-top: auto;
+.form-row{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
 }
-
-.left {
-  width: 35rem;
+form select, form input{
+    display: block;
+    width: 100%;
+    margin: 15px 12px;
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #eee;
+    font-weight: 300;
 }
-
-h1 {
-  font-size: 3.25rem;
-  color:var(--secondary);
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
-  text-transform: uppercase;
+form input[type = text], form input[type = number],form input[type = date], form input::placeholder, select{
+    color: #9a9a9a;
 }
-
+form input[type = submit]{
+    color: #fff;
+    background:var(--primary);
+    padding: 12px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+form input[type = submit]:hover{
+    opacity: 0.9;
+}
+@media(max-width: 992px){
+    .card-container{
+        grid-template-columns: 100%;
+        width: 100vw;
+    }
+    .card-img{
+        height: 330px;
+    }
+}

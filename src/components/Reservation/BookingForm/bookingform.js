@@ -1,38 +1,64 @@
-import './bookingform.css';
-export function BookingForm(){
-    return (
-      <div className="booking">
-        <div class="left">
-          <h1>Make Your reservation</h1>
-        </div>
-        <div class="right">
+import { useState,useEffect } from "react";
+import { useFormik } from "formik";
+
+import "./bookingform.css";
+
+export function BookingForm() {
+  const [availableTimes, setAvailableTimes] = useState([]);
+ const formik = useFormik({
+    initialValues: { date:"", guest: "", Occasion:""},
+    onSubmit: (values,helper) => {
+    
+     helper.resetForm() 
+    }
+  });
+  return (
+    <div className="banner">
+      <h2>BOOK YOUR TABLE NOW</h2>
+      <div className="card-container">
+        <div className="card-img"></div>
+        <div className="card-content">
+          <h3>Reservation</h3>
           <form>
-            <label htmlFor="res-date">Choose date</label>
-            <input type="date" id="res-date" />
-            <label htmlFor="res-time">Choose time</label>
-            <select id="res-time ">
-              <option>17:00</option>
-              <option>18:00</option>
-              <option>19:00</option>
-              <option>20:00</option>
-              <option>21:00</option>
-              <option>22:00</option>
-            </select>
-            <label htmlFor="guests">Number of guests</label>
-            <input type="number" placeholder="1" min="1" max="10" id="guests" />
-            <label htmlFor="occasion">Occasion</label>
-            <select id="occasion">
-              <option>Birthday</option>
-              <option>Anniversary</option>
-            </select>
-            <button
-              className="button_Y"
-              type="submit"
-            >
-            Make Your Reservation
-            </button>
+            <div className="form-row">
+              <input
+                name="date"
+                type="Date"
+                value={formik.values.date}
+                onChange={formik.handleChange}
+              />
+              <select>
+                {availableTimes.map((time) => (
+                  <option value={time}>{time}</option>
+                ))}
+              </select>
+            </div>
+
+            <div className="form-row">
+              <input
+                value={formik.values.guest}
+                onChange={formik.handleChange}
+                name="guest"
+                type="number"
+                placeholder="Guests"
+                min="1"
+              />
+              <select
+                onChange={formik.handleChange}
+                value={formik.values.Occasion}
+                name="Occasion">
+                <option value="hour-select">Occasion</option>
+                <option value="Birthday">Birthday</option>
+                <option value="Anniversary">Anniversary</option>
+              </select>
+            </div>
+
+            <div className="form-row">
+              <input type="submit" value="BOOK TABLE" />
+            </div>
           </form>
         </div>
       </div>
-    );
+    </div>
+  );
 }
