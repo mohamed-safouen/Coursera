@@ -1,18 +1,20 @@
-import { useState} from "react";
+import { useState, } from "react";
 import { useFormik } from "formik";
 
 import "./bookingform.css";
 
 export function BookingForm(props) {
   const [Time, setTime] = useState(
-    <option>18:00</option>)
+    props.AvailableTimes.map((times) => <option key={times}>{times}</option>)
+  );
   
   const [date,setDate]=useState(new Date().toISOString().slice(0,10))   
    function handleDateChange(e) {
      setDate(e.target.value);
      const date = new Date(e.target.value);
-     props.setAvailableTimes(date);
-     setTime(<option>20:00</option>);
+     props.updateTimes(date);
+     setTime(props.AvailableTimes.map((times) => <option key={times} value={times}>{times}</option>));
+     
    }
            
  const formik = useFormik({
@@ -37,8 +39,7 @@ export function BookingForm(props) {
                 value={date}
                 onChange={handleDateChange}
               />
-              <select>
-                <option>17:00</option>
+              <select >
                 {Time}
               </select>
             </div>
