@@ -1,23 +1,22 @@
 import { useState, } from "react";
 import { useFormik } from "formik";
+import { useNavigate } from "react-router-dom";
 
 import "./bookingform.css";
 
 export function BookingForm(props) {
-  
+  const navigate = useNavigate();
   const [date,setDate]=useState(new Date().toISOString().slice(0,10))   
    function handleDateChange(e) {
      setDate(e.target.value);
      const date = new Date(e.target.value);
      props.updateTimes(date);
-    
-     
    }
-           
  const formik = useFormik({
     initialValues: { guest:1, Occasion:""},
     onSubmit: (values,helper) => {
-    props.setAvailableTimes(values)
+      navigate("/Confirmation");
+      props.submit(values)
      helper.resetForm()
     }
   });
@@ -44,7 +43,6 @@ export function BookingForm(props) {
                 ))}
               </select>
             </div>
-
             <div className="form-row">
               <input
                 value={formik.values.guest}
@@ -64,7 +62,6 @@ export function BookingForm(props) {
                 <option value="Anniversary">Anniversary</option>
               </select>
             </div>
-
             <div className="form-row">
               <input type="submit" value="BOOK TABLE" />
             </div>

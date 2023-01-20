@@ -1,28 +1,27 @@
-import { useState,useReducer} from "react";
+import {useReducer} from "react";
 
 import Header from "../Header/header";
 import Footer from "../Footer/footer";
 import { BookingForm } from "./BookingForm/bookingform";
-import { fetchAPI } from "../../router/API";
+import { fetchAPI,submitAPI } from "../../router/API";
 
 
 
 export function Reservation() {
-  const updateTimes =(date)=>{
-return(fetchAPI(date))
-  }
-  
+  const updateTimes = (date) => {
+    return fetchAPI(date);
+  };
   const initializeTimes = fetchAPI(new Date());
-  
-  const [AvailableTimes, dispatch] = useReducer(updateTimes, initializeTimes)
-  console.log(AvailableTimes);
+  const [AvailableTimes, dispatch] = useReducer(updateTimes, initializeTimes);
+
+  function submitForm(formData) {
+    return submitAPI(formData)
+    }
   return (
-    <>
+    <div className="container">
       <Header />
-      <BookingForm
-      AvailableTimes={AvailableTimes} updateTimes={dispatch}
-      />
+      <BookingForm AvailableTimes={AvailableTimes} updateTimes={dispatch} submit={submitForm} />
       <Footer />
-    </>
+    </div>
   );
 }

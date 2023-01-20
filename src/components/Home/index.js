@@ -7,14 +7,14 @@ import About from "./About/About";
 
 export function Home() {
   return (
-    <>
+    <div className="container">
       <Header />
       <Hero />
       <Highlights />
       <Testimonials />
       <About />
       <Footer />
-    </>
+    </div>
   );
 }
 
