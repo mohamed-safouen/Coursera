@@ -6,17 +6,22 @@ import "./bookingform.css";
 
 export function BookingForm(props) {
   const navigate = useNavigate();
+
   const [date,setDate]=useState(new Date().toISOString().slice(0,10))   
    function handleDateChange(e) {
      setDate(e.target.value);
+     
      const date = new Date(e.target.value);
+    
      props.updateTimes(date);
+     console.log(date);
    }
  const formik = useFormik({
-    initialValues: { guest:1, Occasion:""},
+    initialValues: { guest:1, Occasion:"",date:date,time:""},
     onSubmit: (values,helper) => {
       navigate("/Confirmation");
       props.submit(values)
+      console.log(values);
      helper.resetForm()
     }
   });
@@ -27,7 +32,7 @@ export function BookingForm(props) {
         <div className="card-img"></div>
         <div className="card-content">
           <h3>Reservation</h3>
-          <form>
+          <form onSubmit={formik.handleSubmit}>
             <div className="form-row">
               <input
                 name="date"
@@ -35,7 +40,10 @@ export function BookingForm(props) {
                 value={date}
                 onChange={handleDateChange}
               />
-              <select>
+              <select
+                onChange={formik.handleChange}
+                value={formik.values.time}
+                name="time">
                 {props.AvailableTimes.map((times) => (
                   <option key={times} value={times}>
                     {times}

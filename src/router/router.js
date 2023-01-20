@@ -4,7 +4,6 @@ import {Menu} from "../components/Menu";
 import {Reservation} from "../components/Reservation";
 import { ConfirmerdBooking } from "../components/Reservation/BookingForm/confirmedBooking";
 
-import "../App.css"
 export function Router() {
 
   return (

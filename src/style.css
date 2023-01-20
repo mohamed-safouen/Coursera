@@ -21,6 +21,9 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+.container{
+  margin: 0 15rem;
+}
 .button_Y{
   font-family: var(--font-s);
   font-weight: 400;
@@ -47,17 +50,18 @@ body {
     justify-content: space-around;
     width: 50rem;
 } 
-body{
-  margin:0
+.container{
+  margin: 0 3rem ;
 }
 
 }
 @media only screen and (max-width: 340px)  {
-body{
-  margin:0 1rem;
-}
+
 .clients{
   margin: 0 10rem;
+}
+.container{
+  margin: 0 3rem;
 }
 }
 

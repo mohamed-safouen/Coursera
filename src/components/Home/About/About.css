@@ -1,7 +1,7 @@
 .About {
   background-color: var(--primary);
   margin: 0 -15rem 6em -15rem;
-  padding: 3em 10em;
+  padding: 3em 15em;
   display: flex;
   
   justify-content: space-between;
