@@ -4,16 +4,13 @@ import { useFormik } from "formik";
 import "./bookingform.css";
 
 export function BookingForm(props) {
-  const [Time, setTime] = useState(
-    props.AvailableTimes.map((times) => <option key={times}>{times}</option>)
-  );
   
   const [date,setDate]=useState(new Date().toISOString().slice(0,10))   
    function handleDateChange(e) {
      setDate(e.target.value);
      const date = new Date(e.target.value);
      props.updateTimes(date);
-     setTime(props.AvailableTimes.map((times) => <option key={times} value={times}>{times}</option>));
+    
      
    }
            
@@ -39,8 +36,12 @@ export function BookingForm(props) {
                 value={date}
                 onChange={handleDateChange}
               />
-              <select >
-                {Time}
+              <select>
+                {props.AvailableTimes.map((times) => (
+                  <option key={times} value={times}>
+                    {times}
+                  </option>
+                ))}
               </select>
             </div>
 
