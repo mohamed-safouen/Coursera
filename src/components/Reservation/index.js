@@ -17,6 +17,7 @@ export function Reservation() {
   function submitForm(formData) {
     return submitAPI(formData)
     }
+    console.log(AvailableTimes);
   return (
     <div className="container">
       <Header />
