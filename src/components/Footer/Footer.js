@@ -1,14 +1,18 @@
 import logo from "./../../images/Header/Logo.svg";
+import { SocialIcon } from "react-social-icons";
+
+
 import "./Footer.css";
+
 const Footer = () => {
   return (
     <>
-      <div className="footer-row">
-        <div className="logo">
-          <img src={logo} alt="logo" />
+      <div className="footer-container">
+        <div className="logo-container">
+          <img src={logo} alt="logo" className="footer-logo" />
         </div>
-        <div className="tex-footer">
-          <nav className="nav-footer">
+        <div className="footer-nav-container">
+          <nav className="footer-nav">
             <a href="#HOME">Home</a>
             <a href="#ABOUT">About</a>
             <a href="#MENU">Menu</a>
@@ -16,28 +20,57 @@ const Footer = () => {
             <a href="#ORDER">Order Online</a>
             <a href="#LOGIN">Login</a>
           </nav>
-          <div className="contact">
+        </div>
+        <div className="footer-contact-container">
+          <div className="footer-contact">
             <h4>Contact</h4>
-            <ul className="list">
+            <ul className="footer-contact-list">
               <li>Adresse</li>
               <li>Phone number</li>
               <li>email</li>
             </ul>
           </div>
-          <div className="socials">
-            <h4>socials</h4>
-            <ul className="list">
-              <li>Facebook</li>
-              <li>Instagram</li>
-              <li>Twitter</li>
+        </div>
+        <div className="footer-social-container">
+          <div className="footer-social">
+            <h4>Socials</h4>
+            <ul className="footer-social-list">
+              <li>
+                
+                  <SocialIcon
+                    url="https://facebook.com"
+                    bgColor="grey"
+                    style={{ height: 30, width: 30 }}
+                  />
+                
+              </li>
+              <li>
+                
+                  <SocialIcon
+                    url="https://instagram.com/"
+                    bgColor="grey"
+                    style={{ height: 30, width: 30 }}
+                  />
+                
+              </li>
+              <li>
+                
+                  <SocialIcon
+                    url="https://twitter.com"
+                    bgColor="grey"
+                    style={{ height: 30, width: 30 }}
+                  />
+                
+              </li>
             </ul>
           </div>
         </div>
       </div>
-      <div>
+      <div className="footer-copyright">
         <h5>© 2023 Little Lemon Restaurant. All rights reserved</h5>
       </div>
     </>
   );
 };
+
 export default Footer;

@@ -1,4 +1,3 @@
-import HeroImage from "../../../images/reservation/food5.jpeg";
 import { Link } from "react-router-dom";
 
 import "./confirmedBooking.css"
@@ -16,7 +15,7 @@ export function ConfirmerdBooking() {
         <section className="redirect-buttons">
           <a
             className="redirect-button"
-            href={"#"}
+            href={"#Cnfirmation"}
             target="_blank"
             rel="noreferrer">
             Browse Menu
