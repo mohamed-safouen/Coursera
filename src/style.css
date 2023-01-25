@@ -39,6 +39,22 @@ body {
   -o-border-radius: 15px;
   padding: 0.5rem 1.4rem;
 }
+.background-image {
+  background-image: url('./images/Under/coming-soon.jpg');
+  background-size: cover;
+  height: 100vh;
+}
+
+.text-overlay {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+}
 @media only screen and (max-width: 860px)  {
 .Rest_img,.two_img,.logo{
   display:none;

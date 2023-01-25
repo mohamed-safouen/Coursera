@@ -24,7 +24,7 @@ const Header=()=>{
         </button>
         <nav className={`nav ${isOpen ? "open" : ""}`}>
           <Link to="/">Home</Link>
-          <a href="#ABOUT" aria-label="About">
+          <a href="#about" aria-label="About">
             About
           </a>
           <Link to="/Menu" aria-label="Menu">
@@ -33,7 +33,7 @@ const Header=()=>{
           <Link to="/Reservation" aria-label="Reservation">
             Reservation
           </Link>
-          <a href="#ORDER" aria-label="Order">
+          <a href="/Order" aria-label="Order">
             Order Online
           </a>
           <Link to="/Login" aria-label="Login">

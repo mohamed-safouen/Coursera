@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
+
 import logo from "./../../images/Header/Logo.svg";
 import { SocialIcon } from "react-social-icons";
-
 
 import "./Footer.css";
 
@@ -13,12 +14,22 @@ const Footer = () => {
         </div>
         <div className="footer-nav-container">
           <nav className="footer-nav">
-            <a href="#HOME">Home</a>
-            <a href="#ABOUT">About</a>
-            <a href="#MENU">Menu</a>
-            <a href="#RESERVZTIONS">Reservations</a>
-            <a href="#ORDER">Order Online</a>
-            <a href="#LOGIN">Login</a>
+            <Link to="/">Home</Link>
+            <a href="#about" aria-label="About">
+              About
+            </a>
+            <Link to="/Menu" aria-label="Menu">
+              Menu
+            </Link>
+            <Link to="/Reservation" aria-label="Reservation">
+              Reservation
+            </Link>
+            <a href="/Order" aria-label="Order">
+              Order Online
+            </a>
+            <Link to="/Login" aria-label="Login">
+              Login
+            </Link>
           </nav>
         </div>
         <div className="footer-contact-container">
