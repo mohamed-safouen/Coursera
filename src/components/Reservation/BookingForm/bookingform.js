@@ -43,17 +43,21 @@ export function BookingForm(props) {
           <form onSubmit={formik.handleSubmit}>
             <div className="form-row">
               <div className="number-input-container">
+                <label htmlFor="date"></label>
                 <input
+                  id="date"
                   name="date"
                   type="Date"
                   value={date}
                   onChange={handleDateChange}
                   required
                 />
-                {formik.errors.date? <p>* {formik.errors.date}</p> : null}
+                {formik.errors.date ? <p>* {formik.errors.date}</p> : null}
               </div>
               <div className="number-input-container">
+                <label htmlFor="time"></label>
                 <select
+                id="time"
                   onChange={formik.handleChange}
                   value={formik.values.time}
                   name="time"
@@ -69,7 +73,9 @@ export function BookingForm(props) {
             </div>
             <div className="form-row">
               <div className="number-input-container">
+                <label htmlFor="guest"></label>
                 <input
+                  id="guest"
                   value={formik.values.guest}
                   onChange={formik.handleChange}
                   name="guest"
@@ -77,12 +83,13 @@ export function BookingForm(props) {
                   placeholder="Guests"
                   min="1"
                   max="10"
-                  
                 />
                 {formik.errors.guest ? <p>* {formik.errors.guest}</p> : null}
               </div>
               <div className="number-input-container">
+                <label htmlFor="occasion"></label>
                 <select
+                  id="occassion"
                   onChange={formik.handleChange}
                   value={formik.values.Occasion}
                   name="Occasion"
@@ -91,11 +98,14 @@ export function BookingForm(props) {
                   <option value="Birthday">Birthday</option>
                   <option value="Anniversary">Anniversary</option>
                 </select>
-                {formik.errors.Occasion ? <p>* {formik.errors.Occasion}</p> : null}
+                {formik.errors.Occasion ? (
+                  <p>* {formik.errors.Occasion}</p>
+                ) : null}
               </div>
             </div>
             <div className="form-row">
               <input
+                aria-label="Confirmation onClick"
                 type="submit"
                 value="BOOK TABLE"
                 disabled={!formik.isValid}

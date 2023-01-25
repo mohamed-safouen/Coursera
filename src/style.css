@@ -46,7 +46,7 @@ body {
 .footer-row{
   margin:0 -10rem;
 }
-.tex-footer,.Header{
+.tex-footer{
     justify-content: space-around;
     width: 50rem;
 } 
