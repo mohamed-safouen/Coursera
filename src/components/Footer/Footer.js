@@ -6,6 +6,16 @@ import { SocialIcon } from "react-social-icons";
 import "./Footer.css";
 
 const Footer = () => {
+      const handleClick = (a) => () => {
+        const element = document.getElementById(a);
+        if (element) {
+          element.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }
+     
+      };
   return (
     <>
       <div className="footer-container">
@@ -14,8 +24,13 @@ const Footer = () => {
         </div>
         <div className="footer-nav-container">
           <nav className="footer-nav">
-            <Link to="/">Home</Link>
-            <a href="#about" aria-label="About">
+            <Link to="/" href="#home-section" onClick={handleClick("home")}>
+              Home
+            </Link>
+            <a
+              href="#about-section"
+              aria-label="about"
+              onClick={handleClick("about")}>
               About
             </a>
             <Link to="/Menu" aria-label="Menu">

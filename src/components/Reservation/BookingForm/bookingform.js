@@ -17,7 +17,7 @@ export function BookingForm(props) {
      console.log(date);
    }
  const formik = useFormik({
-   initialValues: { guest: "", Occasion: "", date: "", time: "" },
+   initialValues: { guest: "", Occasion: "", date: date, time: "" },
    onSubmit: (values, helper) => {
      navigate("/Confirmation");
      props.submit(values);
@@ -29,7 +29,7 @@ export function BookingForm(props) {
        .min(1, "must be at least 1 guest")
        .required("Tell us number of guest"),
      Occasion: Yup.string().nullable().required("Tell us the Occasion"),
-     date: Yup.string().nullable().required("Choose Date "),
+     date: Yup.date().nullable().required("Choose Date "),
      time: Yup.string().nullable().required("Choose Time"),
    }),
  });

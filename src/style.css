@@ -43,6 +43,7 @@ body {
   background-image: url('./images/Under/coming-soon.jpg');
   background-size: cover;
   height: 100vh;
+  margin: 0 -10rem;
 }
 
 .text-overlay {

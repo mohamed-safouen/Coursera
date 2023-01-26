@@ -6,25 +6,40 @@ import "./Header.css";
 const Header=()=>{
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleClick = () => {
+  const handleHamburger = () => {
     setIsOpen(!isOpen);
   };
+    const handleClick = (a) => () => {
+      const element = document.getElementById(a);
+      if (element) {
+        element.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+      handleHamburger();
+    };
     return (
-      <div className="Header">
+      <div id="home"className="Header">
         <Link to="/">
           <img src={logo} alt="logo" />
         </Link>
         <button
           className={`hamburger-menu ${isOpen ? "open" : ""}`}
-          onClick={handleClick}
+          onClick={handleHamburger}
           aria-label="menu">
-          <span className="bar"></span>
-          <span className="bar"></span>
-          <span className="bar"></span>
+          <span className={isOpen ? "bar_close_1" : "bar"}></span>
+          <span className={isOpen ? "bar_close_2" : "bar"}></span>
+          <span className={isOpen ? "bar_close_3" : "bar"}></span>
         </button>
         <nav className={`nav ${isOpen ? "open" : ""}`}>
-          <Link to="/">Home</Link>
-          <a href="#about" aria-label="About">
+          <Link to="/" href="#home-section" onClick={handleClick("home")}>
+            Home
+          </Link>
+          <a
+            href="#about-section"
+            aria-label="about"
+            onClick={handleClick("about")}>
             About
           </a>
           <Link to="/Menu" aria-label="Menu">

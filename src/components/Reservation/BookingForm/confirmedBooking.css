@@ -3,12 +3,11 @@
         text-align: center;
         color: white;
         margin:0 0;
-       
   }
   .reserve-header-text {
     background-color: #495E57;
     padding: 3rem ;
-    font-size: 25px;
+    font-size: 1.2rem;
     border-radius: 0.5rem;
   }
 .text-section{
@@ -48,3 +47,26 @@
     color:#464646 !important;
     transition: 0.2s;
   }
+@media(max-width: 960px){
+ .confirmation-header {
+        
+        margin:0 -8rem;
+  }
+    .redirect-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 12vw;
+    position: absolute;
+    bottom: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media(max-width: 517px){
+ .confirmation-header {
+        margin:0 -6rem;
+  }
+  .text-section{
+    margin:0 0 2rem 0
+  }
+}
