@@ -7,7 +7,7 @@ import About from "./About/About";
 
 export function Home() {
   return (
-    <div className="container">
+    <div>
       <Header />
       <Hero />
       <Highlights />

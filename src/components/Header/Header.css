@@ -3,7 +3,12 @@
   justify-content: space-between;
   gap: 2rem;
   align-items: center;
-  padding: 2rem 0;
+  padding: 1rem 0;
+  height: 2rem;
+  margin: 0 2rem;
+}
+.Header img{
+  margin-left: 2rem;
 }
 .nav {
  display: flex;
@@ -14,16 +19,26 @@ padding: 0px;
 gap: 28px;
 }
 .nav a {
-  font-size: 0.8em;
+  font-size: 1.3rem;
   text-decoration: none;
   color: #000;
   font-weight: 700;
+  padding: 1rem;
+  border-radius:15px;
+  -webkit-border-radius:15px;
+  -moz-border-radius:15px;
+  -ms-border-radius:15px;
+  -o-border-radius:15px;
+}
+.nav a:hover{
+  background-color: var(--secondary);
+  font-weight:bolder
 }
 .nav.open {
-      display: flex;
+    display: flex;
     flex-direction: column;
     position: fixed;
-    top: 5rem;
+    top: 4rem;
     right: 0%;
     background-color: white;
     width: 100%;
@@ -33,7 +48,7 @@ gap: 28px;
 .hamburger-menu {
   display: none;
   cursor: pointer;
-  width: 2rem;
+  width: 2.2rem;
   height: 2rem;
   justify-content: space-around;
   flex-flow: column nowrap;
@@ -45,18 +60,18 @@ gap: 28px;
 }
 
 .bar {
-  width: 1rem;
-  height: 0.11rem;
+  width: 2rem;
+  height: 0.15rem;
   border-radius: 10px;
   background-color: black;
 }
 .bar_close_1{
   background-color: black;
-   position: relative;
-    width: 2.1rem;
-    height: 0.11rem;
-    top: 0.39rem;
-    right: 0.5rem;
+  position: relative;
+  width: 2.9rem;
+  height:0.15rem;
+  top: 0.65rem;
+  right: 0.35rem;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -66,10 +81,10 @@ gap: 28px;
 .bar_close_3{
   background-color: black;
   position: relative;
-    width: 2.1rem;
-    height: 0.11rem;
-    top: -0.39rem;
-    right: 0.5rem;
+  width: 2.9rem;
+  height: 0.15rem;
+  top: -0.48rem;
+  right: 0.35rem;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -79,17 +94,19 @@ gap: 28px;
 .bar_close_2{
   display: none;
 }
-@media (max-width: 812px) {
+@media (max-width: 970px) {
   .nav {
     display: none;
   }
   .hamburger-menu {
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 2.5rem;
   display: flex;
   justify-content: space-around;
   flex-flow: column nowrap;
   z-index: 10;
+ border: none;
+  background-color: transparent;
   }
   
 }

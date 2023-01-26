@@ -1,5 +1,5 @@
 .About {
-  background-color: var(--primary);
+  background-color: var(--secondary);
   margin: 0 -15rem;
   padding: 3em 15rem;
   display: flex;
@@ -9,28 +9,28 @@
 }
 
 .title_description {
-  width: 100%;
-  padding: 2em 0;
-  text-align: center;
+  width: 40%;
+  padding: 2rem 2rem 2rem 10rem;
+  text-align: left;
 }
 
 .title_description h1 {
-  font-family: "Roboto";
-  font-weight: 500;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: 800;
   font-style:"Medium";
   line-height: 65px;
-  font-size: 56px;
-  color: var(--secondary);
+  font-size: 3rem;
+  color: black;
   margin: 0;
 }
 
 .title_description h2 {
   font-family: var(--font-p);
-  font-weight: 400;
+  font-weight: 600;
   font-style:oblique;
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 38px;
-  color: var(--Wh);
+  color: black;
   margin: 0;
 }
 
@@ -39,12 +39,12 @@
   font-weight: 400;
   font-style: oblique;
   font-size: 20px;
-  color: var(--Wh);
+  color: black;
   margin: 1 0 0 0;
-  text-align: center;
+  text-align: left;
 }
 .two_img {
-width: 100%;
+width: 30%;
 max-height: 21rem;
 display: flex;
 justify-content: center;
@@ -52,14 +52,23 @@ align-items: center;
 }
 
 .two_img img {
-width: 25%;
-height: auto;
-padding: 2rem;
+width: 60%;
+height: 20rem;
 border-radius: 45px;
 -webkit-border-radius: 45px;
 -moz-border-radius: 45px;
 -ms-border-radius: 45px;
 -o-border-radius: 45px;
+}
+.adrian_img{
+  position: relative;
+  top:5rem;
+  z-index: 2;
+}
+.mario_img{
+  position: relative;
+  right:5rem;
+  z-index:1;
 }
 
 /* Media Queries */

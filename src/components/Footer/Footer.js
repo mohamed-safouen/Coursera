@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import logo from "./../../images/Header/Logo.svg";
+import logo from "./../../images/Header/footer-logo.png";
 import { SocialIcon } from "react-social-icons";
 
 import "./Footer.css";
@@ -17,7 +17,7 @@ const Footer = () => {
      
       };
   return (
-    <>
+    <div className="footer">
       <div className="footer-container">
         <div className="logo-container">
           <img src={logo} alt="logo" className="footer-logo" />
@@ -91,7 +91,7 @@ const Footer = () => {
       <div className="footer-copyright">
         <h5>© 2023 Little Lemon Restaurant. All rights reserved</h5>
       </div>
-    </>
+    </div>
   );
 };
 

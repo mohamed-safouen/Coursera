@@ -1,49 +1,48 @@
 .Hero {
   background-color: var(--primary);
-  margin:  0 -15rem 5rem -15rem;
   padding: 0 15rem;
   display: flex;
   justify-content: space-between;
 }
-.title_description {
-  padding: 2em 0;
+.Hero_description {
+  padding: 4em 0;
   width: 23rem;
 }
-.title_description h1 {
+.Hero_description h1 {
   font-family: "Roboto";
-  font-weight: 500;
+  font-weight: 800;
   font-style:"Medium";
   line-height: 65px;
-  font-size: 56px;
+  font-size: 4rem;
   color: var(--secondary);
   margin: 0;
 }
-.title_description h2 {
+.Hero_description h2 {
   font-family: var(--font-p);
   font-weight: 400;
   font-style:oblique;
-  font-size: 32px;
+  font-size: 3rem;
   line-height: 38px;
   color: var(--Wh);
   margin: 0;
 }
-.title_description p {
+.Hero_description p {
   font-family: var(--font-s);
   font-weight: 400;
   font-style: oblique;
-  font-size: 20px;
+  font-size: 1.5rem;
   color: var(--Wh);
   margin: 1 0 0 0;
 }
 
 .Rest_img {
   width: 15rem;
-  max-height: 17rem;
+  max-height: 18rem;
 }
 .Rest_img img {
   width: 100%;
-  height: 23rem;
-  padding: 2rem;
+  height: 26rem;
+  padding: 3rem;
   border-radius: 45px;
   -webkit-border-radius: 45px;
   -moz-border-radius: 45px;
