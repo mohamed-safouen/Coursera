@@ -2,7 +2,7 @@ import Footer from "../Footer/footer";
 import Header from "../Header/header";
 import "./order.css";
 
-export default function Order() {
+export function Order() {
   return (
     <div className="container">
       <Header />

@@ -10,14 +10,15 @@ export function BookingForm(props) {
   const navigate = useNavigate();
 
   const [date,setDate]=useState(new Date().toISOString().slice(0,10))   
+  console.log(date);
    function handleDateChange(e) {
      setDate(e.target.value);
-      const date = new Date(e.target.value);
+      const date = new Date(e.target.value).toISOString().slice(0, 10);
      props.updateTimes(date);
      console.log(date);
    }
  const formik = useFormik({
-   initialValues: { guest: "", Occasion: "", date: date, time: "" },
+   initialValues: { guest: "", Occasion: "", date:date, time: "" },
    onSubmit: (values, helper) => {
      navigate("/Confirmation");
      props.submit(values);
@@ -29,9 +30,10 @@ export function BookingForm(props) {
        .min(1, "must be at least 1 guest")
        .required("Tell us number of guest"),
      Occasion: Yup.string().nullable().required("Tell us the Occasion"),
-     date: Yup.date().nullable().required("Choose Date "),
+     date: Yup.string().required("Choose Date "),
      time: Yup.string().nullable().required("Choose Time"),
    }),
+    
  });
   return (
     <div className="banner">
@@ -40,9 +42,13 @@ export function BookingForm(props) {
         <div className="card-img"></div>
         <div className="card-content">
           <h3>Reservation</h3>
+           
           <form onSubmit={formik.handleSubmit}>
             <div className="form-row">
-              <div className="number-input-container">
+              <div
+                
+                className="number-input-container">
+                
                 <label htmlFor="date"></label>
                 <input
                   id="date"
@@ -57,7 +63,7 @@ export function BookingForm(props) {
               <div className="number-input-container">
                 <label htmlFor="time"></label>
                 <select
-                id="time"
+                  id="time"
                   onChange={formik.handleChange}
                   value={formik.values.time}
                   name="time"

@@ -8,7 +8,7 @@ import About from "./About/About";
 export function Home() {
   return (
     <div>
-      <Header />
+      <Header name="about" />
       <Hero />
       <Highlights />
       <Testimonials />

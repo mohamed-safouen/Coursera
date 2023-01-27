@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import food from "./../../../images/Home/restauranfood.jpg";
 import "./Hero.css"
 const Hero = () => {
@@ -9,9 +10,10 @@ const Hero = () => {
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          
         </p>
-        <button className="button_Y">Reserve a Table</button>
+        <Link to="/Reservation" aria-label="Reservation">
+          <button className="button_Y">Reserve a Table</button>
+        </Link>
       </div>
       <div className="Rest_img">
         <img src={food} alt="restaurant" />

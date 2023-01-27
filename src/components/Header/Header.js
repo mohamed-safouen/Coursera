@@ -3,9 +3,11 @@ import  { useState } from "react";
 import { Link } from "react-router-dom";
 
 import "./Header.css";
-const Header=()=>{
-  const [isOpen, setIsOpen] = useState(false);
+import useScroll from "../../hooks/useScroll";
 
+const Header=(props)=>{
+  const [isOpen, setIsOpen] = useState(false);
+const Scrolling = useScroll()
   const handleHamburger = () => {
     setIsOpen(!isOpen);
   };
@@ -16,11 +18,13 @@ const Header=()=>{
           behavior: "smooth",
           block: "start",
         });
+        
       }
+      
       handleHamburger();
     };
     return (
-      <div id="home"className="Header">
+      <div id="home" className={`Header ${Scrolling === "down" ? "" : "scroll"}`}>
         <Link to="/">
           <img src={logo} alt="logo" />
         </Link>
@@ -36,12 +40,13 @@ const Header=()=>{
           <Link to="/" href="#home-section" onClick={handleClick("home")}>
             Home
           </Link>
+          {(props.name)?(
           <a
-            href="#about-section"
-            aria-label="about"
-            onClick={handleClick("about")}>
-            About
-          </a>
+            href={`#${props.name}-section`}
+            aria-label={props.name}
+            onClick={handleClick(props.name)}>
+           {props.name}
+          </a>):("")}
           <Link to="/Menu" aria-label="Menu">
             Menu
           </Link>

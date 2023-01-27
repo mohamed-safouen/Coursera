@@ -3,8 +3,8 @@ import { Route,Routes } from "react-router-dom";
 import {Menu} from "../components/Menu";
 import {Reservation} from "../components/Reservation";
 import { ConfirmerdBooking } from "../components/Reservation/BookingForm/confirmedBooking";
-import Order from "../components/order/order";
-import Login from "../components/login/login";
+import {Order} from "../components/order";
+import {Login} from "../components/login";
 
 export function Router() {
 

@@ -52,10 +52,15 @@ const Footer = () => {
             <h4>Contact</h4>
             <ul className="footer-contact-list">
               <li>
-                Adresse : 5848 w irvink park rd apt 1r Chicago il 60634-2625 USA
+                <span>Adresse :</span> 5848 w irvink park rd apt 1r Chicago il
+                60634-2625 USA
               </li>
-              <li>Phone number : +1 312 111 111</li>
-              <li>Email : info@littlelemon.com</li>
+              <li>
+                <span>Phone number :</span> +1 312 111 111
+              </li>
+              <li>
+                <span>Email :</span> info@littlelemon.com
+              </li>
             </ul>
           </div>
         </div>

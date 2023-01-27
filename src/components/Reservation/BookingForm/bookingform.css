@@ -73,17 +73,22 @@ form select, form input{
 form input[type = text], form input[type = number],form input[type = date], form input::placeholder, select{
     color: #9a9a9a;
 }
-form input[type = submit]{
-    color: #fff;
+form input[type = submit]:enabled{
+    
     background:var(--primary);
+}
+form input[type = submit]:hover{
+    opacity: 0.9;
+}
+form input[type = submit]{
     padding: 12px 0;
     margin: 1rem;
     border-radius: 4px;
     width: 100%;
     cursor: pointer;
-}
-form input[type = submit]:hover{
-    opacity: 0.9;
+    color: #fff;
+    background-color:rgba(73, 94, 87, 0.5);
+    
 }
 @media(max-width: 992px){
     .card-container{
