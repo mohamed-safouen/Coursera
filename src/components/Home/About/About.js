@@ -3,7 +3,7 @@ import adrian from './../../../images/Home/Mario and Adrian A.jpg'
 import mario from "./../../../images/Home/Mario and Adrian b.jpg";
 const About = () => {
   return (
-    <div id="about" className="About">
+    <div id="About" className="About">
       <div className="title_description">
         <h1>Little Lemon</h1>
         <h2>Chicago</h2>

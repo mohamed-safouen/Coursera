@@ -8,12 +8,12 @@ import About from "./About/About";
 export function Home() {
   return (
     <div>
-      <Header name="about" />
+      <Header name="About" home="Home" />
       <Hero />
       <Highlights />
       <Testimonials />
       <About />
-      <Footer />
+      <Footer name="About" home="Home" />
     </div>
   );
 }

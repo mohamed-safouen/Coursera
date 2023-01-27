@@ -1,5 +1,5 @@
 {
-  "homepage": "https://mohamed-safouen.github.io",
+  "homepage": "https://mohamed-safouen.github.io/Coursera",
   "name": "coursera",
   "version": "0.1.0",
   "private": true,
@@ -14,6 +14,8 @@
     "react-router-dom": "^6.6.2",
     "react-scripts": "5.0.1",
     "react-social-icons": "^5.15.0",
+    "react-spinners": "^0.13.8",
+    "styled-components": "^5.3.6",
     "web-vitals": "^2.1.4",
     "yup": "^0.32.11"
   },

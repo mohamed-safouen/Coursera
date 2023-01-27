@@ -5,7 +5,7 @@ import { SocialIcon } from "react-social-icons";
 
 import "./Footer.css";
 
-const Footer = () => {
+const Footer = (props) => {
       const handleClick = (a) => () => {
         const element = document.getElementById(a);
         if (element) {
@@ -24,15 +24,31 @@ const Footer = () => {
         </div>
         <div className="footer-nav-container">
           <nav className="footer-nav">
-            <Link to="/" href="#home-section" onClick={handleClick("home")}>
-              Home
-            </Link>
-            <a
-              href="#about-section"
-              aria-label="about"
-              onClick={handleClick("about")}>
-              About
-            </a>
+            {props.home ? (
+              <a
+                href="#Home-section"
+                onClick={() => {
+                  window.scrollTo({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}>
+                Home
+              </a>
+            ) : (
+              <Link to="/">Home</Link>
+            )}
+            {props.name ? (
+              <a
+                href={`#${props.name}-section`}
+                aria-label={props.name}
+                onClick={handleClick(props.name)}>
+                {props.name}
+              </a>
+            ) : (
+              ""
+            )}
             <Link to="/Menu" aria-label="Menu">
               Menu
             </Link>

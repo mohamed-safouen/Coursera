@@ -12,19 +12,22 @@ const Scrolling = useScroll()
     setIsOpen(!isOpen);
   };
     const handleClick = (a) => () => {
+      
       const element = document.getElementById(a);
       if (element) {
         element.scrollIntoView({
           behavior: "smooth",
           block: "start",
         });
-        
+        console.log(a);
       }
       
       handleHamburger();
     };
     return (
-      <div id="home" className={`Header ${Scrolling === "down" ? "" : "scroll"}`}>
+      <div
+        id="Home"
+        className={`Header ${Scrolling === "down" ? "" : "scroll"}`}>
         <Link to="/">
           <img src={logo} alt="logo" />
         </Link>
@@ -37,16 +40,30 @@ const Scrolling = useScroll()
           <span className={isOpen ? "bar_close_3" : "bar"}></span>
         </button>
         <nav className={`nav ${isOpen ? "open" : ""}`}>
-          <Link to="/" href="#home-section" onClick={handleClick("home")}>
-            Home
-          </Link>
-          {(props.name)?(
-          <a
-            href={`#${props.name}-section`}
-            aria-label={props.name}
-            onClick={handleClick(props.name)}>
-           {props.name}
-          </a>):("")}
+          {props.home ? (
+            <a href="#Home-section" onClick={() => {
+   window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+   });
+}}>
+              Home
+            </a>
+          ) : (
+            <Link to="/">Home</Link>
+          )}
+
+          {props.name ? (
+            <a
+              href={`#${props.name}-section`}
+              aria-label={props.name}
+              onClick={handleClick(props.name)}>
+              {props.name}
+            </a>
+          ) : (
+            ""
+          )}
           <Link to="/Menu" aria-label="Menu">
             Menu
           </Link>
