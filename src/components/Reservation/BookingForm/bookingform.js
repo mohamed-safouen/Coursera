@@ -10,13 +10,11 @@ export function BookingForm(props) {
   const navigate = useNavigate();
 
   const [date,setDate]=useState(new Date().toISOString().slice(0,10))   
-  console.log(date);
    function handleDateChange(e) {
      setDate(e.target.value);
       const date = new Date(e.target.value).toISOString().slice(0, 10);
      props.updateTimes(date);
-     console.log(date);
-   }
+     }
  const formik = useFormik({
    initialValues: { guest: "", Occasion: "", date:date, time: "" },
    onSubmit: (values, helper) => {

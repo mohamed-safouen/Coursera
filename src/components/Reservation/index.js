@@ -9,7 +9,7 @@ export const updateTimes = (date) => {
   return fetchAPI(date);
 };
 export const initializeTimes = fetchAPI(new Date());
-console.log(initializeTimes);
+
 
 export function Reservation() {
   const [AvailableTimes, dispatch] = useReducer(updateTimes, initializeTimes);
@@ -17,7 +17,7 @@ export function Reservation() {
   function submitForm(formData) {
     return submitAPI(formData)
     }
-    console.log(AvailableTimes);
+    
   return (
     <div className="container">
       <Header />

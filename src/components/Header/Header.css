@@ -45,6 +45,11 @@ gap: 28px;
   background-color: var(--secondary);
   font-weight:bolder
 }
+.nav a:focus{
+  background-color: var(--secondary);
+  font-weight:bolder;
+  color: beige;
+}
 
 
 .hamburger-menu {

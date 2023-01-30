@@ -47,6 +47,7 @@ const Scrolling = useScroll()
       left: 0,
       behavior: 'smooth'
    });
+    handleHamburger();
 }}>
               Home
             </a>
