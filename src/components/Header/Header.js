@@ -26,7 +26,7 @@ export function Header (props)  {
   return (
     <div id="Home" className={`Header ${Scrolling === "down" ? "" : "scroll"}`}>
       
-      <Link to="/">
+      <Link to="/Home">
         <img src={logo} alt="logo" />
       </Link>
       <button
@@ -52,7 +52,7 @@ export function Header (props)  {
             Home
           </a>
         ) : (
-          <Link to="/">Home</Link>
+          <Link to="/Home">Home</Link>
         )}
 
         {props.name ? (
