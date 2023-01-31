@@ -19,4 +19,4 @@ Deployment on Github resulted in some issues, so the link above redirects you to
  - Yup
 
 ### Install and Run:
- - Run 'npm start' on the reserve-a-table folder
+ - Run 'npm start' 
