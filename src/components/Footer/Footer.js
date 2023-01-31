@@ -5,7 +5,7 @@ import { SocialIcon } from "react-social-icons";
 
 import "./Footer.css";
 
-const Footer = (props) => {
+export function Footer(props) {
       const handleClick = (a) => () => {
         const element = document.getElementById(a);
         if (element) {

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import food from "./../../../images/Home/restauranfood.jpg";
 import "./Hero.css"
-const Hero = () => {
+export function Hero()  {
   return (
     <div className="Hero">
       <div className="Hero_description">
@@ -21,4 +21,4 @@ const Hero = () => {
     </div>
   );
 };
-export default Hero;
+

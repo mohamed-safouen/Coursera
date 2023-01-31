@@ -1,6 +1,6 @@
 import "./Testimonials.css"
 import profile from "./../../../images/Home/profile-photo.jpg"
-const Testimonials = () => {
+export function Testimonials() {
   const testi = [
     {
       name: "Adrian",
@@ -54,4 +54,4 @@ const Testimonials = () => {
     </div>
   );
 };
-export default Testimonials;
+

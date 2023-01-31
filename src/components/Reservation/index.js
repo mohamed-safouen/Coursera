@@ -1,7 +1,7 @@
 import {useReducer} from "react";
 
-import Header from "../Header/header";
-import Footer from "../Footer/footer";
+import {Header} from "../Header/header";
+import {Footer} from "../Footer/footer";
 import { BookingForm } from "./BookingForm/bookingform";
 import { fetchAPI,submitAPI } from "../../router/API";
 

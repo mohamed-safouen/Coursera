@@ -9,7 +9,7 @@ const specials = [
   { name: "Bruchetta", price: 5.99, description: "Our Burchetta is made from grilled bread that has been smeared with garlic ans sessoned with salt and olive oil", image: bruch },
   { name: "Lemon Dessert", price: 5.00, description: "This comos straigt from grandma's recipe book.every last ingredient has been sourced and is a authentic as can be imagined", image: dessert },
 ];
-const Highlights = () => {
+export function Highlights() {
   return (
     <div className="Highlights">
       <div className="title_spec">

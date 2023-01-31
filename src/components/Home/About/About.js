@@ -1,7 +1,7 @@
 import './About.css'
 import adrian from './../../../images/Home/Mario and Adrian A.jpg'
 import mario from "./../../../images/Home/Mario and Adrian b.jpg";
-const About = () => {
+export function About() {
   return (
     <div id="About" className="About">
       <div className="title_description">
@@ -27,4 +27,4 @@ const About = () => {
     </div>
   );
 };
-export default About;
+
