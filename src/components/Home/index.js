@@ -1,5 +1,5 @@
-import {Header} from "../Header/header";
-import {Footer} from "../Footer/footer";
+import {Header} from "../Header/Header";
+import {Footer} from "../Footer/Footer";
 import {Hero} from "./Hero/Hero";
 import {Highlights} from "./Highlights/Highlights";
 import {Testimonials} from "./Testimonials/Testimonials";
