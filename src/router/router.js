@@ -24,7 +24,7 @@ useEffect(() => {
         </div>
       ) : (
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/Coursera" element={<Home />} />
           <Route path="/Menu" element={<Menu />} />
           <Route path="/Reservation" element={<Reservation />} />
           <Route path="/Confirmation" element={<ConfirmerdBooking />} />
