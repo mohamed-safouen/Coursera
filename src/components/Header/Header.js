@@ -1,6 +1,6 @@
 import logo from "../../images/Header/Logo.svg"
 import  { useState } from "react";
-import { Link, BrowserRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import "./Header.css";
 import useScroll from "../../hooks/useScroll";
@@ -25,7 +25,7 @@ export function Header (props)  {
   };
   return (
     <div id="Home" className={`Header ${Scrolling === "down" ? "" : "scroll"}`}>
-      <BrowserRouter basename="/Coursera"/>
+      
       <Link to="/">
         <img src={logo} alt="logo" />
       </Link>
