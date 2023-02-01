@@ -1,27 +1,26 @@
 {
   "files": {
-    "main.css": "/Coursera/static/css/main.c049ec58.css",
-    "main.js": "/Coursera/static/js/main.f4304771.js",
+    "main.css": "/Coursera/static/css/main.fc993a9b.css",
+    "main.js": "/Coursera/static/js/main.2731d361.js",
     "static/js/787.53d378e4.chunk.js": "/Coursera/static/js/787.53d378e4.chunk.js",
-    "static/media/Mario and Adrian A.jpg": "/Coursera/static/media/Mario and Adrian A.7f44c6d6e341a27d14b3.jpg",
-    "static/media/Mario and Adrian b.jpg": "/Coursera/static/media/Mario and Adrian b.6ba0e06bfa9c1ea75109.jpg",
     "static/media/bruchetta.svg": "/Coursera/static/media/bruchetta.29ea078fea3d3120ed22402e901b5bbc.svg",
     "static/media/greek salad.jpg": "/Coursera/static/media/greek salad.bed423a1fab5b210e347.jpg",
     "static/media/restauranfood.jpg": "/Coursera/static/media/restauranfood.e8abf5b772b6817189aa.jpg",
+    "static/media/Mario_and_Adrian_B.jpg": "/Coursera/static/media/Mario_and_Adrian_B.d933878ea314d41fca77.jpg",
     "static/media/food5.jpeg": "/Coursera/static/media/food5.47717fbc1b9f0e72382e.jpeg",
+    "static/media/Mario_and_Adrian_A.jpg": "/Coursera/static/media/Mario_and_Adrian_A.c06ab845fb78a296011e.jpg",
     "static/media/restaurant.jpg": "/Coursera/static/media/restaurant.324d0f99bdf19400a0f7.jpg",
-    "static/media/coming-soon.jpg": "/Coursera/static/media/coming-soon.a1f4e97111ccbc844a3d.jpg",
     "static/media/reserved.jpg": "/Coursera/static/media/reserved.1d6488745874e5d6de06.jpg",
     "static/media/Logo.svg": "/Coursera/static/media/Logo.f72c913c48c5334f78f2c336ec36f22b.svg",
     "static/media/footer-logo.png": "/Coursera/static/media/footer-logo.4470f9c9e815da98dbb3.png",
     "static/media/profile-photo.jpg": "/Coursera/static/media/profile-photo.989fde370d537e581d72.jpg",
     "index.html": "/Coursera/index.html",
-    "main.c049ec58.css.map": "/Coursera/static/css/main.c049ec58.css.map",
-    "main.f4304771.js.map": "/Coursera/static/js/main.f4304771.js.map",
+    "main.fc993a9b.css.map": "/Coursera/static/css/main.fc993a9b.css.map",
+    "main.2731d361.js.map": "/Coursera/static/js/main.2731d361.js.map",
     "787.53d378e4.chunk.js.map": "/Coursera/static/js/787.53d378e4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c049ec58.css",
-    "static/js/main.f4304771.js"
+    "static/css/main.fc993a9b.css",
+    "static/js/main.2731d361.js"
   ]
 }
