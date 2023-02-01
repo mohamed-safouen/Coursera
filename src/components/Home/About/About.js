@@ -1,6 +1,6 @@
 import './About.css'
-import adrian from './../../../images/Home/Mario and Adrian A.jpg'
-import mario from "./../../../images/Home/Mario and Adrian b.jpg";
+import adrian from "./../../../images/Home/About/Mario_and_Adrian_A.jpg";
+import mario from "./../../../images/Home/About/Mario_and_Adrian_B.jpg";
 export function About() {
   return (
     <div id="About" className="About">

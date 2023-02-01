@@ -5,7 +5,7 @@
   align-items: center;
   padding: 1rem 2rem;
   height: 2rem;
-  
+  background-color: white;
 }
 .scroll{
 position: sticky;
@@ -107,18 +107,29 @@ gap: 28px;
   }
   .hamburger-menu.open {
   display: flex;
+  position: fixed;
+ top: 1rem;
+ right: 2rem;
 }
+
 .nav.open {
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 4rem;
+    top: 0rem;
     right: 0%;
     background-color: white;
+    height:100vh;
     width: 100%;
-    padding: 2rem 0;
+    padding: 4rem 0;
+    justify-content: stretch;
+    
 }
-
+.Header img.open{
+ position: fixed;
+ top: 1rem;
+ z-index: 20;
+}
   .hamburger-menu {
   width: 3rem;
   height: 2.5rem;
@@ -127,6 +138,8 @@ gap: 28px;
   flex-flow: column nowrap;
   z-index: 10;
  border: none;
+ 
+ 
   background-color: transparent;
   }
   

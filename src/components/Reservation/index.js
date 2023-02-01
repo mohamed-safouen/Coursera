@@ -3,7 +3,7 @@ import {useReducer} from "react";
 import {Header} from "../Header/Header";
 import {Footer} from "../Footer/Footer";
 import { BookingForm } from "./BookingForm/bookingform";
-import { fetchAPI,submitAPI } from "../../router/API";
+import { fetchAPI,submitAPI } from "../../API";
 
 export const updateTimes = (date) => {
   return fetchAPI(date);

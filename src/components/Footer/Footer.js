@@ -34,12 +34,22 @@ export function Footer(props) {
                     left: 0,
                     behavior: "smooth",
                   });
-                 
                 }}>
                 {props.home}
               </NavLink>
             ) : (
-              <Link to="/">Home</Link>
+              <Link
+                to="/"
+                onClick={() => {
+                  window.scrollTo({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                 
+                }}>
+                Home
+              </Link>
             )}
 
             {props.name ? (
@@ -52,16 +62,52 @@ export function Footer(props) {
             ) : (
               ""
             )}
-            <Link to="/Menu" aria-label="Menu">
+            <Link
+              to="/Menu"
+              aria-label="Menu"
+              onClick={() => {
+                window.scrollTo({
+                  top: 0,
+                  left: 0,
+                  behavior: "smooth",
+                });
+              }}>
               Menu
             </Link>
-            <Link to="/Reservation" aria-label="Reservation">
+            <Link
+              to="/Reservation"
+              aria-label="Reservation"
+              onClick={() => {
+                window.scrollTo({
+                  top: 0,
+                  left: 0,
+                  behavior: "smooth",
+                });
+              }}>
               Reservation
             </Link>
-            <Link to="/Order" aria-label="Order">
+            <Link
+              to="/Order"
+              aria-label="Order"
+              onClick={() => {
+                window.scrollTo({
+                  top: 0,
+                  left: 0,
+                  behavior: "smooth",
+                });
+              }}>
               Order Online
             </Link>
-            <Link to="/Login" aria-label="Login">
+            <Link
+              to="/Login"
+              aria-label="Login"
+              onClick={() => {
+                window.scrollTo({
+                  top: 0,
+                  left: 0,
+                  behavior: "smooth",
+                });
+              }}>
               Login
             </Link>
           </nav>

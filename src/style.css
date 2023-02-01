@@ -42,12 +42,7 @@ body {
   padding: 0.5rem 1.4rem;
   cursor: pointer;
 }
-.background-image {
-  background-image: url('./images/Under/coming-soon.jpg');
-  background-size: cover;
-  height: 100vh;
-  margin: 0 -10rem;
-}
+
 
 .text-overlay {
   text-align: center;

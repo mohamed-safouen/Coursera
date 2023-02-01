@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import food from "./../../../images/Home/restauranfood.jpg";
+import food from "./../../../images/Home/Hero/restauranfood.jpg";
 import "./Hero.css"
 export function Hero()  {
   return (

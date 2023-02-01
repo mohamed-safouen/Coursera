@@ -24,10 +24,24 @@ export function Header (props)  {
     handleHamburger();
   };
   return (
-    <div id="Home" className={`Header ${Scrolling === "down" ? "" : "scroll"}`}>
-      <Link to="/">
-        <img src={logo} alt="logo" />
-      </Link>
+    <div
+      id="Home"
+      className={`Header ${Scrolling === "down" ? "" : "scroll"} ${
+        isOpen ? "open" : ""
+      }`}>
+      <NavLink
+        to="/"
+        aria-label="logo to Home"
+        onClick={() => {
+          window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth",
+          });
+          handleHamburger();
+        }}>
+        <img src={logo} className={isOpen ? "open" : ""} alt="logo" />
+      </NavLink>
       <button
         className={`hamburger-menu ${isOpen ? "open" : ""}`}
         onClick={handleHamburger}
@@ -39,7 +53,7 @@ export function Header (props)  {
       <nav className={`nav ${isOpen ? "open" : ""}`}>
         {props.home ? (
           <NavLink
-            to='/'
+            to="/"
             aria-label={props.home}
             onClick={() => {
               window.scrollTo({
@@ -52,26 +66,80 @@ export function Header (props)  {
             {props.home}
           </NavLink>
         ) : (
-          <Link to="/">Home</Link>
+          <Link
+            to="/"
+            onClick={() => {
+              window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "smooth",
+              });
+              handleHamburger();
+            }}>
+            Home
+          </Link>
         )}
 
         {props.name ? (
-         <NavLink to={`/#${props.name}`} aria-label={props.name} onClick={handleClick(props.name)}>
-          {props.name}
-        </NavLink>
+          <NavLink
+            to={`/#${props.name}`}
+            aria-label={props.name}
+            onClick={handleClick(props.name)}>
+            {props.name}
+          </NavLink>
         ) : (
           ""
         )}
-        <Link to="/Menu" aria-label="Menu">
+        <Link
+          to="/Menu"
+          aria-label="Menu"
+          onClick={() => {
+            window.scrollTo({
+              top: 0,
+              left: 0,
+              behavior: "smooth",
+            });
+            handleHamburger();
+          }}>
           Menu
         </Link>
-        <Link to="/Reservation" aria-label="Reservation">
+        <Link
+          to="/Reservation"
+          aria-label="Reservation"
+          onClick={() => {
+            window.scrollTo({
+              top: 0,
+              left: 0,
+              behavior: "smooth",
+            });
+            handleHamburger();
+          }}>
           Reservation
         </Link>
-        <Link to="/Order" aria-label="Order">
+        <Link
+          to="/Order"
+          aria-label="Order"
+          onClick={() => {
+            window.scrollTo({
+              top: 0,
+              left: 0,
+              behavior: "smooth",
+            });
+            handleHamburger();
+          }}>
           Order Online
         </Link>
-        <Link to="/Login" aria-label="Login">
+        <Link
+          to="/Login"
+          aria-label="Login"
+          onClick={() => {
+            window.scrollTo({
+              top: 0,
+              left: 0,
+              behavior: "smooth",
+            });
+            handleHamburger();
+          }}>
           Login
         </Link>
       </nav>
