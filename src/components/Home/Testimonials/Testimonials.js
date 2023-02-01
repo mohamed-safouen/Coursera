@@ -8,6 +8,7 @@ export function Testimonials() {
       Rating: 5,
       Review:
         "This restaurant is amazing! the stuff are very nice and warm people, the food delishes!",
+      id: "1",
     },
     {
       name: "Mario",
@@ -15,6 +16,7 @@ export function Testimonials() {
       Rating: 2,
       Review:
         "The cheesey bread will fill your heart with love! very recommended.",
+      id: "2",
     },
     {
       name: "Messi",
@@ -22,6 +24,7 @@ export function Testimonials() {
       Rating: 1,
       Review:
         "Ordered the salad and pasta Margarita, best pasta in the whole country!",
+      id: "3",
     },
   ];
   return (

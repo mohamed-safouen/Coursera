@@ -9,6 +9,7 @@ import {Login} from "../components/login";
 import { CircleLoader } from "react-spinners";
 
 import "../App.css"
+import { About } from "../components/Home/About/About";
 
 
 export function Router() {
@@ -20,12 +21,13 @@ useEffect(() => {
     <>
       {loading ? (
         <div className="loader">
-          <CircleLoader loading={loading}  color="#495e57" />
+          <CircleLoader loading={loading} color="#495e57" />
         </div>
       ) : (
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Menu" element={<Menu />} />
+          <Route path="/About" element={<About />} />
           <Route path="/Reservation" element={<Reservation />} />
           <Route path="/Confirmation" element={<ConfirmerdBooking />} />
           <Route path="/Order" element={<Order />} />

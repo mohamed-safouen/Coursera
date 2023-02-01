@@ -1,6 +1,6 @@
 import logo from "../../images/Header/Logo.svg"
 import  { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import "./Header.css";
 import useScroll from "../../hooks/useScroll";
@@ -38,8 +38,9 @@ export function Header (props)  {
       </button>
       <nav className={`nav ${isOpen ? "open" : ""}`}>
         {props.home ? (
-          <a
-            href="#Home-section"
+          <NavLink
+            to='/'
+            aria-label={props.home}
             onClick={() => {
               window.scrollTo({
                 top: 0,
@@ -48,19 +49,16 @@ export function Header (props)  {
               });
               handleHamburger();
             }}>
-            Home
-          </a>
+            {props.home}
+          </NavLink>
         ) : (
           <Link to="/">Home</Link>
         )}
 
         {props.name ? (
-          <a
-            href={`#${props.name}-section`}
-            aria-label={props.name}
-            onClick={handleClick(props.name)}>
-            {props.name}
-          </a>
+         <NavLink to={`/#${props.name}`} aria-label={props.name} onClick={handleClick(props.name)}>
+          {props.name}
+        </NavLink>
         ) : (
           ""
         )}

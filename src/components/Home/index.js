@@ -9,10 +9,12 @@ export function Home() {
   return (
     <div>
       <Header name="About" home="Home" />
-      <Hero />
-      <Highlights />
-      <Testimonials />
-      <About />
+      <main>
+        <Hero />
+        <Highlights />
+        <Testimonials />
+        <About />
+      </main>
       <Footer name="About" home="Home" />
     </div>
   );

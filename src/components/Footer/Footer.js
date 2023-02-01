@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link,NavLink } from "react-router-dom";
 
 import logo from "./../../images/Header/footer-logo.png";
 import { SocialIcon } from "react-social-icons";
@@ -25,27 +25,30 @@ export function Footer(props) {
         <div className="footer-nav-container">
           <nav className="footer-nav">
             {props.home ? (
-              <a
-                href="#Home-section"
+              <NavLink
+                to="/"
+                aria-label={props.home}
                 onClick={() => {
                   window.scrollTo({
                     top: 0,
                     left: 0,
                     behavior: "smooth",
                   });
+                 
                 }}>
-                Home
-              </a>
+                {props.home}
+              </NavLink>
             ) : (
               <Link to="/">Home</Link>
             )}
+
             {props.name ? (
-              <a
-                href={`#${props.name}-section`}
+              <NavLink
+                to={`/#${props.name}`}
                 aria-label={props.name}
                 onClick={handleClick(props.name)}>
                 {props.name}
-              </a>
+              </NavLink>
             ) : (
               ""
             )}
@@ -55,9 +58,9 @@ export function Footer(props) {
             <Link to="/Reservation" aria-label="Reservation">
               Reservation
             </Link>
-            <a href="/Order" aria-label="Order">
+            <Link to="/Order" aria-label="Order">
               Order Online
-            </a>
+            </Link>
             <Link to="/Login" aria-label="Login">
               Login
             </Link>
