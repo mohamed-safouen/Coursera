@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Little-Limon-Restaurant/static/css/main.635bdb39.css",
+    "main.css": "/Little-Limon-Restaurant/static/css/main.364a5e6c.css",
     "main.js": "/Little-Limon-Restaurant/static/js/main.2086915d.js",
     "static/js/787.53d378e4.chunk.js": "/Little-Limon-Restaurant/static/js/787.53d378e4.chunk.js",
     "static/media/bruchetta.svg": "/Little-Limon-Restaurant/static/media/bruchetta.29ea078fea3d3120ed22402e901b5bbc.svg",
@@ -15,12 +15,12 @@
     "static/media/footer-logo.png": "/Little-Limon-Restaurant/static/media/footer-logo.4470f9c9e815da98dbb3.png",
     "static/media/profile-photo.jpg": "/Little-Limon-Restaurant/static/media/profile-photo.989fde370d537e581d72.jpg",
     "index.html": "/Little-Limon-Restaurant/index.html",
-    "main.635bdb39.css.map": "/Little-Limon-Restaurant/static/css/main.635bdb39.css.map",
+    "main.364a5e6c.css.map": "/Little-Limon-Restaurant/static/css/main.364a5e6c.css.map",
     "main.2086915d.js.map": "/Little-Limon-Restaurant/static/js/main.2086915d.js.map",
     "787.53d378e4.chunk.js.map": "/Little-Limon-Restaurant/static/js/787.53d378e4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.635bdb39.css",
+    "static/css/main.364a5e6c.css",
     "static/js/main.2086915d.js"
   ]
 }
