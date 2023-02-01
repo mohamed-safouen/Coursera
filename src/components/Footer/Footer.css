@@ -1,6 +1,5 @@
 .footer{
   background-color: var(--primary);
-  margin: 0 -2rem 0 0;
 }
 .footer-container {
   display: flex;
@@ -115,6 +114,9 @@
 
 /* Media Queries */
 @media only screen and (max-width: 812px) {
+  .footer{
+    
+  }
  .footer-nav-container {
   display: none;
 }
